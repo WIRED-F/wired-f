@@ -1,5 +1,5 @@
 # 💫 About Me:
-Currently studying Cybersecurity and networking in mapua malayan
+Currently studying Cybersecurity and networking at mapua malayan
 
 
 # 💻 Tech Stack:
