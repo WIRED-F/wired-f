@@ -26,3 +26,33 @@ Currently studying Cybersecurity and networking at mapua malayan
 
   
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+#include <iostream>
+#include <string>
+
+class HackerProfile {
+private:
+    std::string name;
+    std::string alias;
+    std::string favoriteLanguage;
+    int yearsOfExperience;
+    bool likesCoding;
+
+public:
+    HackerProfile(std::string n, std::string a, std::string lang, int exp, bool likes)
+        : name(n), alias(a), favoriteLanguage(lang), yearsOfExperience(exp), likesCoding(likes) {}
+
+    void displayProfile() const {
+        std::cout << "Hacker Profile:\n";
+        std::cout << "Name: " << name << "\n";
+        std::cout << "Alias: " << alias << "\n";
+        std::cout << "Favorite Programming Language: " << favoriteLanguage << "\n";
+        std::cout << "Years of Experience: " << yearsOfExperience << "\n";
+        std::cout << "Likes Coding: " << (likesCoding ? "Yes" : "No") << "\n";
+    }
+};
+
+int main() {
+    HackerProfile hacker("Alice", "CyberShadow", "C++", 5, true);
+    hacker.displayProfile();
+    return 0;
+}
